@@ -13,7 +13,7 @@ example:
 [source,nix]
 ----
 cleanpath = {
-  url = "github:chemoelectric-nixos/cleanpath-flake/v1.0.1?dir=build%2Fx86_64-linux%2Frelease-25.05";
+  url = "github:chemoelectric-nixos/cleanpath-flake/v1.0.2?dir=build%2Fx86_64-linux%2Frelease-25.05";
 };
 ----
 

@@ -76,7 +76,7 @@ join_with_delimiters (string[] split, char delim)
       const delim1 = [delim];
       char[] array = to!(char[]) (split[0]);
       foreach (entry; split[1..split.length])
-	array = array ~ delim1 ~ to!(char[]) (entry);
+        array = array ~ delim1 ~ to!(char[]) (entry);
       s = to!string (array);
     }
   return s;
@@ -96,8 +96,8 @@ delete_duplicates (string[] array)
   foreach (entry; array)
     if ((entry in found) is null)
       {
-	result ~= entry;
-	found[entry] = true;
+        result ~= entry;
+        found[entry] = true;
       }
   return result;
 }
