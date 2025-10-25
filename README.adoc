@@ -5,14 +5,15 @@ Remove empty and duplicate entries from a colon-separated path.
 For example: ":a:b:b:::c:a::" → "a:b:c"
 
 This package demonstrates that GNU Autoconf has _nothing_ to do with
-‘*make*’ programs. You can use the configure script to customize the
-flake. You can also use the pre-configured flakes available here. For
+‘*make*’ programs. Autoconf is a tool for generating shell scripts,
+usually called ‘configure’. You can use the configure script here to
+customize a flake. You can also use our pre-configured flakes. For
 example:
 
 [source,nix]
 ----
 cleanpath = {
-  url = "github:chemoelectric-nixos/cleanpath-flake/v1.0.0?dir=build%2Fx86_64-linux%2Frelease-25.05";
+  url = "github:chemoelectric-nixos/cleanpath-flake/v1.0.1?dir=build%2Fx86_64-linux%2Frelease-25.05";
 };
 ----
 
