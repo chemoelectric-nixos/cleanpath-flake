@@ -4,7 +4,19 @@ Remove empty and duplicate entries from a colon-separated path.
 
 For example: ":a:b:b:::c:a::" → "a:b:c"
 
-This program is taken from the ‘cleanpath project’ at
+This package demonstrates that GNU Autoconf has _nothing_ to do with
+‘*make*’ programs. You can use the configure script to customize the
+flake. You can also use the pre-configured flakes available here. For
+example:
+
+[source,nix]
+----
+cleanpath = {
+  url = "github:chemoelectric-nixos/cleanpath-flake/v1.0.0?dir=build%2Fx86_64-linux%2Frelease-25.05";
+};
+----
+
+The program is taken from the ‘cleanpath project’ at
 https://sourceforge.net/p/chemoelectric/odds_and_ends/ci/default/tree/cleanpath/
 The dlang version is what we are using, to avoid the severely broken
 gcc compilers of NixOS. We compile the program statically with Digital

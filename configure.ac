@@ -17,7 +17,7 @@
 #
 
 AC_PREREQ([2.72])
-AC_INIT([cleanpath-flake],[0.0.0])
+AC_INIT([cleanpath-flake],[1.0.0])
 
 AC_CONFIG_SRCDIR([cleanpath.d])
 AC_CONFIG_AUX_DIR([build-aux])
