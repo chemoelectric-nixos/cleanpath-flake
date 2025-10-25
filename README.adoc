@@ -1,0 +1,17 @@
+= cleanpath
+
+Remove empty and duplicate entries from a colon-separated path.
+
+For example: ":a:b:b:::c:a::" → "a:b:c"
+
+This program is taken from the ‘cleanpath project’ at
+https://sourceforge.net/p/chemoelectric/odds_and_ends/ci/default/tree/cleanpath/
+The dlang version is what we are using, to avoid the severely broken
+gcc compilers of NixOS. We compile the program statically with Digital
+Mars D.
+
+There is a ‘canonical’ solution to the path-cleaning problem. It is a
+one-liner in Awk. You can look it up with an Internet search engine.
+The author of the cleanpath project prefers to use his own programs,
+on grounds that ‘cleanpath’ is an interesting programming challenge.
+The results ought to be used.
