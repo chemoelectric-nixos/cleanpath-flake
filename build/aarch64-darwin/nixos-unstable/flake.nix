@@ -1,5 +1,5 @@
 #
-# Copyright © 2025 Barry Schwartz
+# Copyright © 2025, 2026 Barry Schwartz
 #
 # This program is free software: you can redistribute it and/or
 # modify it under the terms of the GNU General Public License, as
@@ -27,7 +27,7 @@
     { self, nixpkgs, ... }:
     let
       lib = nixpkgs.lib;
-      pkgs = import nixpkgs { system = "aarch64-darwin"; };
+      pkgs = nixpkgs.legacyPackages."aarch64-darwin";
       xz = "${pkgs.xz}/bin/xz";
       pax = "${pkgs.pax}/bin/pax";
       dmd = "${pkgs.dmd}/bin/dmd";
