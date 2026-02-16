@@ -20,14 +20,14 @@
   description = "A Nix flake for cleanpath";
 
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/release-25.05";
+    nixpkgs.url = "github:NixOS/nixpkgs/release-25.11";
   };
 
   outputs =
     { self, nixpkgs, ... }:
     let
       lib = nixpkgs.lib;
-      pkgs = import nixpkgs { system = "aarch64-darwin"; };
+      pkgs = import nixpkgs { system = "aarch64-linux"; };
       xz = "${pkgs.xz}/bin/xz";
       pax = "${pkgs.pax}/bin/pax";
       dmd = "${pkgs.dmd}/bin/dmd";
@@ -35,7 +35,7 @@
       install = "${pkgs.coreutils}/bin/install";
     in
     {
-      packages."aarch64-darwin" = rec {
+      packages."aarch64-linux" = rec {
 
         default = cleanpath;
 

@@ -20,7 +20,7 @@
   description = "A Nix flake for cleanpath";
 
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/release-25.05";
+    nixpkgs.url = "github:NixOS/nixpkgs/release-25.11";
   };
 
   outputs =

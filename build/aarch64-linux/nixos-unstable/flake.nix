@@ -52,7 +52,7 @@
           unpackPhase = ''
             ${xz} -d < $src | ${pax} -r
           '';
-          configurePhase = '':'';
+          configurePhase = ":";
           buildPhase = ''
             ${dmd} -of=cleanpath -O src/cleanpath.d \
                    -L-static -L-lphobos2
