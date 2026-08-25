@@ -20,8 +20,9 @@ cleanpath = {
 The program is taken from the ‘cleanpath project’ at
 https://sourceforge.net/p/chemoelectric/odds_and_ends/ci/default/tree/cleanpath/
 The dlang version is what we are using, to avoid the severely broken
-gcc compilers of NixOS. We compile the program statically with Digital
-Mars D.
+gcc compilers of NixOS. We compile the program statically with a D
+compiler.footnote:[At NixOS, they cannot even keep GNU D working at
+all, so it is not that.]
 
 There is a ‘canonical’ solution to the path-cleaning problem. It is a
 one-liner in Awk. You can look it up with an Internet search engine.

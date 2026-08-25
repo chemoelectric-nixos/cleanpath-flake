@@ -30,7 +30,7 @@
       pkgs = nixpkgs.legacyPackages."aarch64-darwin";
       xz = "${pkgs.xz}/bin/xz";
       pax = "${pkgs.pax}/bin/pax";
-      ldc = "${pkgs.ldc}/bin/ldc";
+      ldc = "${pkgs.ldc}/bin/ldc2";
       strip = "${pkgs.binutils}/bin/strip";
       install = "${pkgs.coreutils}/bin/install";
     in
