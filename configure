@@ -1280,7 +1280,8 @@ if test -n "$ac_init_help"; then
 Some influential environment variables:
   SYSTEM      such as "x86_64-linux aarch64-linux" (space separated)
   NIXPKGS_VERSION
-              such as "release-25.11 nixos-unstable" (space separated)
+              such as "release-26.05 release-25.11 nixos-unstable" (space
+              separated)
 
 Use these variables to override the choices made by 'configure' or to help
 it to find libraries and programs with nonstandard names/locations.
@@ -2051,7 +2052,7 @@ fi
 done
 
 
-nixpkgs_versions='release-25.11 nixos-unstable'
+nixpkgs_versions='release-26.05 release-25.11 nixos-unstable'
 systems='x86_64-linux aarch64-linux x86_64-darwin aarch64-darwin'
 
 

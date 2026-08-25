@@ -510,7 +510,7 @@ _ASBOX
   srcdir=/home/trashman/src/chemoelectric-nixos/cleanpath-flake
   builddir=/home/trashman/src/chemoelectric-nixos/cleanpath-flake/build
   system_list="x86_64-linux aarch64-linux x86_64-darwin aarch64-darwin"
-  nixpkgs_list="release-25.11 nixos-unstable"
+  nixpkgs_list="release-26.05 release-25.11 nixos-unstable"
 
 
 
