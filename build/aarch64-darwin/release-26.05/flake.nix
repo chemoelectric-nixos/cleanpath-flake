@@ -48,6 +48,7 @@
             pkgs.ldc
             pkgs.binutils
             pkgs.coreutils
+            pkgs.glibc.static
           ];
           unpackPhase = ''
             ${xz} -d < $src | ${pax} -r
