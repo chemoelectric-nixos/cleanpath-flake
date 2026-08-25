@@ -30,7 +30,7 @@
       pkgs = nixpkgs.legacyPackages."x86_64-darwin";
       xz = "${pkgs.xz}/bin/xz";
       pax = "${pkgs.pax}/bin/pax";
-      ldc = "${pkgs.dmd}/bin/ldc";
+      ldc = "${pkgs.ldc}/bin/ldc";
       strip = "${pkgs.binutils}/bin/strip";
       install = "${pkgs.coreutils}/bin/install";
     in
