@@ -30,7 +30,7 @@
       pkgs = nixpkgs.legacyPackages."aarch64-darwin";
       xz = "${pkgs.xz}/bin/xz";
       pax = "${pkgs.pax}/bin/pax";
-      dmd = "${pkgs.dmd}/bin/dmd";
+      ldc = "${pkgs.dmd}/bin/ldc";
       strip = "${pkgs.binutils}/bin/strip";
       install = "${pkgs.coreutils}/bin/install";
     in
@@ -45,7 +45,7 @@
           nativeBuildInputs = [
             pkgs.xz
             pkgs.pax
-            pkgs.dmd
+            pkgs.ldc
             pkgs.binutils
             pkgs.coreutils
           ];
@@ -54,8 +54,7 @@
           '';
           configurePhase = ":";
           buildPhase = ''
-            ${dmd} -of=cleanpath -O src/cleanpath.d \
-                   -L-static -L-lphobos2
+            ${ldc} --static -O2 src/cleanpath.d
             ${strip} cleanpath
           '';
           installPhase = ''
